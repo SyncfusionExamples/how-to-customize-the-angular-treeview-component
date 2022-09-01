@@ -1,0 +1,14 @@
+<div className='tree-control-wrapper'>
+    <ejs-treeview [fields]="datasourceFields" cssClass="custom-treeview">
+        <ng-template #nodeTemplate="" let-data="">
+            <div>
+                <div class="text-container">
+                    <span>{{data.name}}</span>
+                </div>
+                <div class="count-container">
+                    <span class="e-badge e-badge-primary" *ngIf="data.count">{{data.count}}</span>
+                </div>
+            </div>
+        </ng-template>
+    </ejs-treeview>
+</div>
